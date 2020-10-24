@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="slideshow.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thinkStudent</title>
+  </head>
+  <body>
+    <div class="burger-menu">
+      <button id="burger-button" class="menu-button">
+        <div class="menu-button-line bar1"></div>
+        <div class="menu-button-line bar2"></div>
+        <div class="menu-button-line bar3"></div>
+      </button>
+      <ul class="burger-nav">
+        <li class="nav-link">
+          <a href="#about-us">About us</a>
+        </li>
+        <li class="nav-link">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-link">
+          <a href="#section-pricing">Pricing</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact-form">Get in touch</a>
+        </li><ul/>
+    </div>
+    <nav>
+      <div class="logo"><a href="#">thinkStudent</a></div>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="#about-us">About us</a>
+        </li>
+        <li class="nav-link">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-link">
+          <a href="#section-pricing">Pricing</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact-form">Get in touch</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="landing-text">
+          <h1>Student prices, <span>for</span> everyone</h1>
+          <h2>
+            List <span>your properties</span> for a
+            <span>fraction of the price</span>.
+          </h2>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="landing-text">
+          <h1>See our results...</h1>
+          <div class="link-wrapper"><a href="portfolio.html">Portfolio</a></div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="landing-text">
+          <h1>Book now!</h1>
+          <div class="link-wrapper">
+            <a href="#contact-form">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div id="about-us" class="about-us">
+      <div class="content-wrapper">
+        <div class="left-side">
+          <div class="about-us-text">
+            <h3>What we do...</h3>
+            <p>
+              Here at thinkStudent, we believe students have the capability to
+              produce proffessional level results. However, as students, we do
+              not rely on the fulltime of a proffesssional. Therefore, we are
+              able to deliver top tier results, at a fraction of the price. Our
+              team would love to hear from you, so what are you waiting for? Get
+              in touch with us today! We are looking forward to hearing from
+              you...
+            </p>
+          </div>
+        </div>
+        <img src="images/stock-pic.jpg" />
+      </div>
+    </div>
+    <div id="section-pricing" class="pricing-section">
+      <h3>See our prices...</h3>
+      <div class="prices">
+        <div class="flat-prices">
+          <h3>Flats</h3>
+          <table>
+            <tr>
+              <td>1 bed</td>
+              <td>£30</td>
+            </tr>
+            <tr>
+              <td>2 bed</td>
+              <td>£35</td>
+            </tr>
+            <tr>
+              <td>3 bed</td>
+              <td>£40</td>
+            </tr>
+          </table>
+        </div>
+        <div class="house-prices">
+          <h3>Houses</h3>
+          <table>
+            <tr>
+              <td>2 bed</td>
+              <td>£40</td>
+            </tr>
+            <tr>
+              <td>4 bed</td>
+              <td>£50</td>
+            </tr>
+            <tr>
+              <td>6 bed</td>
+              <td>£60</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p><span>Book now</span> with the form below!</p>
+    </div>
+    <div class="contact-form-wrapper">
+      <h2>Get in touch!</h2>
+      <i class="fas fa-use icon"></i>
+      <form id="contact-form">
+        <div class="form-input">
+          <label class="label-email"><i class="fas fa-user fa-fw"></i></label>
+          <br />
+          <input
+            class="input-name"
+            placeholder="name..."
+            type="text"
+            name="name"
+          />
+        </div>
+        <div class="form-input">
+          <label class="label-email"
+            ><i class="fas fa-envelope fa-fw"></i
+          ></label>
+          <br />
+          <input
+            class="input-email"
+            placeholder="email..."
+            type="text"
+            name="email"
+          />
+        </div>
+        <div class="message-input">
+          <label><i class="far fa-comment-dots fa-fw"></i>Message</label>
+          <br />
+          <textarea
+            rows="4"
+            placeholder="Type a message..."
+            name="message"
+          ></textarea>
+        </div>
+        <button id="submit-button" type="button">Send</button>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="footer-links">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <a href="#">thinkStudent</a>
+          </div>
+        </div>
+        <div class="center-line"></div>
+        <div class="join-us-wrapper">
+          <a class="join-us" href="#">Join the team.</a>
+        </div>
+      </div>
+      <div class="media-icons">
+        <i class="fab fa-facebook fa-fw"></i>
+        <i class="fab fa-instagram fa-fw"></i>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

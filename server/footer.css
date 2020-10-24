@@ -1,0 +1,74 @@
+.footer {
+  margin-top: 20px;
+  background-color: rgba(240, 93, 94, 0.8);
+  color: #f4f2f3;
+  font-family: "Montserrate", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.footer .logo-wrapper,
+.footer .join-us-wrapper {
+  width: 200px;
+}
+
+.logo-wrapper {
+  text-align: right;
+}
+
+.join-us-wrapper {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.logo,
+.join-us {
+  display: inline-block;
+}
+
+.logo {
+  margin-right: 10px;
+}
+.join-us {
+  margin-right: 10px;
+  line-height: 30px;
+  color: #f4f2f3;
+}
+
+.join-us:hover {
+  border-bottom: 1px solid #f4f2f3;
+}
+
+.footer .logo {
+  border: 2px solid #f4f2f3;
+}
+
+.footer .logo a {
+  color: #f4f2f3;
+  padding: 3px;
+}
+
+.footer .center-line {
+  width: 2px;
+  background-color: #f4f2f3;
+  border-radius: 1px;
+}
+
+.footer .join-us {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer .media-icons i {
+  font-size: 20px;
+}
+
+.footer .media-icons i:hover {
+  cursor: pointer;
+}

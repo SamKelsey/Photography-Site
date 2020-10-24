@@ -1,0 +1,42 @@
+#section-portfolio {
+  margin: auto;
+  padding: 60px 50px 0 50px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  width: 50vw;
+  border: 5px solid rgba(240, 93, 94, 0.8);
+}
+
+#section-portfolio h1 {
+  font-size: 2rem;
+  background-color: rgba(240, 93, 94, 0.8);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #f4f2f3;
+  margin: 0 auto;
+}
+
+#section-portfolio h2 {
+  color: rgba(240, 93, 94, 0.8);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 70px auto;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 48%;
+  padding: 0 4px;
+}
+
+.column img {
+  width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}

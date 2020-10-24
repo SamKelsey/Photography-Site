@@ -1,0 +1,32 @@
+.about-us {
+  width: 80vw;
+  margin: auto;
+  background-color: rgba(240, 93, 94, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  color: #f4f2f3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-us .content-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.about-us .content-wrapper img {
+  width: 40%;
+  margin: auto;
+}
+
+.about-us-text {
+  margin: 0;
+  padding-right: 25px;
+}
+.about-us-text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.about-us-text > p {
+  font-size: 1.4rem;
+}

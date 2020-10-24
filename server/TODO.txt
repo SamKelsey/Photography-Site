@@ -1,0 +1,11 @@
+TODO LIST
+
+- Finish burger menu
+- Responsive design
+    - header
+    - landing text
+    - about us
+    - prices
+    - contact form
+    - footer
+    - portfolio

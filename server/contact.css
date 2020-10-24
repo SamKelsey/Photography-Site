@@ -1,0 +1,75 @@
+.contact-form-wrapper {
+  margin: 0 auto;
+  width: 80vw;
+  font-family: "Montserrat", sans-serif;
+  color: #604d53;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 2rem;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.contact-form-wrapper input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-input input,
+.message-input textarea,
+.message-input label,
+.fa-user,
+.fa-envelope,
+.fa-comment-dots {
+  font-size: 1.2rem;
+}
+
+.fa-user,
+.fa-envelope,
+.fa-comment-dots {
+  font-size: 1.5em;
+}
+
+.form-input {
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-input > label {
+  padding-right: 5px;
+}
+
+.form-input i {
+  padding-top: 2px;
+}
+
+.fa-comment-dots {
+  padding-right: 5px;
+}
+
+.message-input {
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.contact-form-wrapper > form > .message-input > textarea {
+  resize: none;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form-wrapper > form > button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #f05d5e;
+  border-radius: 8px;
+  padding: 0px 10px;
+  transition: all 0.3s;
+}
+
+.contact-form-wrapper > form > button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #f05d5e;
+  color: rgba(255, 255, 255, 1);
+}

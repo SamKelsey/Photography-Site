@@ -1,0 +1,48 @@
+.pricing-section {
+  font-family: "Montserrat", sans-serif;
+  width: 80vw;
+  color: #f05d5e;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 20px;
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+.pricing-section > h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.pricing-section > .prices {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20vw;
+}
+
+.pricing-section > .prices h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.prices {
+  padding: 20px;
+}
+
+.pricing-section > .prices p {
+  display: inline-block;
+  margin: 0;
+}
+
+.pricing-section table tr td {
+  padding-right: 50px;
+}
+
+.pricing-section table td:nth-child(2) {
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.pricing-section span {
+  font-weight: bolder;
+}

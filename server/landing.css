@@ -1,0 +1,55 @@
+.landing-text {
+  padding-bottom: 10vh;
+  padding-top: 3vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #604d53;
+}
+
+.landing-text h1 {
+  padding-top: 5vh;
+  font-size: 2.5em;
+}
+
+.landing-text > h1 > span {
+  font-weight: lighter;
+}
+
+.landing-text h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.landing-text h2 > span {
+  font-weight: 1000;
+}
+
+.landing-text a {
+  background-color: rgba(240, 93, 94, 0.8);
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.landing-text .link-wrapper:hover {
+  animation-name: growShrink;
+  animation-duration: 0.3s;
+}
+
+.landing-text .link-wrapper:hover a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes growShrink {
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
