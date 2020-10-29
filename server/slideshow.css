@@ -7,9 +7,8 @@
   border-radius: 40px;
 }
 
-/* Hide the images by default */
 .mySlides {
-  height: 320px;
+  height: 270px;
   display: flex;
   text-align: center;
 }
@@ -53,5 +52,18 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .slideshow-container {
+    width: 90vw;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .mySlides {
+    padding: 0;
+    margin: 0;
   }
 }

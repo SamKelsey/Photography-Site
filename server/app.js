@@ -5,7 +5,6 @@ submitButton = document.getElementById("submit-button");
 
 // Event listeners
 submitButton.addEventListener("click", (e) => {
-  console.log(e.target);
   const inputName = form.elements[0].value;
   const inputEmail = form.elements[1].value;
   const inputMessage = form.elements[2].value;
@@ -89,20 +88,3 @@ function autoShowSlides(n) {
     autoShowSlides(slideIndex);
   }, 5000);
 }
-
-// BURGER MENU
-
-burgerBtn = document.getElementsByClassName("menu-button");
-burgerBtn = burgerBtn[0];
-
-burgerNav = document.querySelector(".burger-nav");
-
-burgerBtn.addEventListener("click", (e) => {
-  if (burgerNav.style.display == "block") {
-    burgerNav.style.display = "none";
-    burgerBtn.classList.remove("change");
-  } else {
-    burgerNav.style.display = "block";
-    burgerBtn.classList.toggle("change");
-  }
-});

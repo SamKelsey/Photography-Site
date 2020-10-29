@@ -30,3 +30,15 @@
 .about-us-text > p {
   font-size: 1.4rem;
 }
+
+@media (max-width: 1000px) {
+  .content-wrapper img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us-text h3 {
+    margin-bottom: 20px;
+  }
+}

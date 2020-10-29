@@ -11,12 +11,12 @@
 .pricing-section > h3 {
   font-size: 2rem;
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .pricing-section > .prices {
   display: flex;
   justify-content: space-between;
-  margin: 0 20vw;
 }
 
 .pricing-section > .prices h3 {
@@ -27,15 +27,11 @@
 
 .prices {
   padding: 20px;
-}
-
-.pricing-section > .prices p {
-  display: inline-block;
-  margin: 0;
+  margin: auto;
 }
 
 .pricing-section table tr td {
-  padding-right: 50px;
+  min-width: 48px;
 }
 
 .pricing-section table td:nth-child(2) {
@@ -45,4 +41,30 @@
 
 .pricing-section span {
   font-weight: bolder;
+}
+
+.bed {
+  padding-right: 20px;
+}
+
+.flat-prices {
+  padding-left: 20vw;
+}
+
+.house-prices {
+  padding-right: 20vw;
+}
+
+@media (max-width: 1000px) {
+  .flat-prices,
+  .house-prices {
+    padding: 0 10vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .flat-prices,
+  .house-prices {
+    padding: 0 5vw;
+  }
 }

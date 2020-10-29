@@ -53,3 +53,9 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 800px) {
+  .landing-text h1 {
+    margin-bottom: 30px;
+  }
+}

@@ -19,6 +19,14 @@ nav {
   display: none;
 }
 
+.menu-button {
+  display: none;
+}
+
+.burger-logo {
+  display: none;
+}
+
 .logo {
   border: 2px solid #f05d5e;
   border-radius: 6px;
@@ -70,12 +78,36 @@ nav > ul {
     display: none;
   }
 
-  .burger-menu {
-    display: block;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .burger-logo {
+    display: inline-block;
+    border: 2px solid #f05d5e;
+    border-radius: 6px;
+    transition: all 0.3s;
+    margin: 3%;
+    transition: 0.3s;
+  }
+
+  .burger-logo:hover {
+    transform: scale(1.05);
+  }
+
+  .burger-logo a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto auto auto;
+    font-size: 1.5rem;
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
   }
 
   .menu-button {
-    z-index: 1;
+    display: block;
+    z-index: 2;
     width: 50px;
     height: 50px;
     border: none;
@@ -102,12 +134,32 @@ nav > ul {
     transition: 0.4s;
   }
 
-  .burger-nav {
-    position: fixed;
-    display: none;
-    width: 100vw;
+  .burger-menu {
+    position: absolute;
     height: 100vh;
+    width: 100vw;
+    top: 0;
+  }
+
+  .burger-menu {
+    z-index: 1;
+  }
+
+  .burger-menu-links-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
     background-color: rgb(0, 0, 0, 0.5);
+  }
+
+  .nav-link a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .nav-link a:hover {
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .change .bar1 {
@@ -129,7 +181,6 @@ nav > ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid green;
     list-style: none;
     padding-left: 0;
     text-align: center;
