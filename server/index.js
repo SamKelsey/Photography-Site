@@ -1,7 +1,7 @@
 express = require("express");
 const app = express();
 const bodyparser = require("body-parser");
-const keys = require("./keys");
+const keys = require("./config/keys");
 const path = require("path");
 
 const nodemailer = require("nodemailer");
