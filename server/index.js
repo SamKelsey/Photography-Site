@@ -24,8 +24,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/send_email", (req, res) => {
-  console.log(req.body);
-
   const mailOptions = {
     from: keys.USER,
     to: "sam_kelsey@hotmail.co.uk",
