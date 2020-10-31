@@ -150,6 +150,7 @@ nav > ul {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: rgb(0, 0, 0, 0.5);
   }
 
