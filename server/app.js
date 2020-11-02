@@ -1,9 +1,11 @@
 // Selectors
 form = document.getElementById("contact-form");
-
 submitButton = document.getElementById("submit-button");
 
-// Event listeners
+const successMessage = "We have received your message!";
+const failMessage = "Oops! Something went wrong, try again later.";
+const newPara = document.createElement("p");
+
 submitButton.addEventListener("click", (e) => {
   const inputName = form.elements[0].value;
   const inputEmail = form.elements[1].value;
@@ -28,8 +30,17 @@ submitButton.addEventListener("click", (e) => {
       return data.json();
     })
     .then((res) => {
-      form.reset();
-      console.log(res);
+      const statusCode = res.message[0] + res.message[1] + res.message[2];
+      if (statusCode == 20) {
+        form.reset();
+        newPara.innerText = successMessage;
+        newPara.style.fontWeight = 700;
+        form.appendChild(newPara);
+      } else {
+        newPara.innerText = failMessage;
+        newPara.style.fontWeight = 700;
+        form.appendChild(newPara);
+      }
     });
 });
 
