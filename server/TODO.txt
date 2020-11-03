@@ -1,7 +1,3 @@
 TODO LIST
 
-
-- Responsive design
-    - portfolio
-
-- Copy burger menu code to portfolio.html
+- Can't press dot button for couple seconds if one has just been pressed.
