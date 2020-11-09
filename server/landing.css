@@ -49,6 +49,10 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.landing-logo {
+  width: 60%;
+}
+
 @keyframes growShrink {
   50% {
     transform: scale(1.05);

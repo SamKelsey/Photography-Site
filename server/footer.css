@@ -35,6 +35,11 @@
 .logo {
   margin-right: 10px;
 }
+
+.logo img {
+  width: 55%;
+}
+
 .join-us {
   margin-right: 10px;
   line-height: 30px;
@@ -43,15 +48,6 @@
 
 .join-us:hover {
   border-bottom: 1px solid #f4f2f3;
-}
-
-.footer .logo {
-  border: 2px solid #f4f2f3;
-}
-
-.footer .logo a {
-  color: #f4f2f3;
-  padding: 3px;
 }
 
 .footer .center-line {

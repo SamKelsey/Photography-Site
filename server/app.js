@@ -6,43 +6,43 @@ const successMessage = "We have received your message!";
 const failMessage = "Oops! Something went wrong, try again later.";
 const newPara = document.createElement("p");
 
-submitButton.addEventListener("click", (e) => {
-  const inputName = form.elements[0].value;
-  const inputEmail = form.elements[1].value;
-  const inputMessage = form.elements[2].value;
+// submitButton.addEventListener("click", (e) => {
+//   const inputName = form.elements[0].value;
+//   const inputEmail = form.elements[1].value;
+//   const inputMessage = form.elements[2].value;
 
-  const data = {
-    name: inputName,
-    email: inputEmail,
-    message: inputMessage,
-  };
+//   const data = {
+//     name: inputName,
+//     email: inputEmail,
+//     message: inputMessage,
+//   };
 
-  const otherParams = {
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-    method: "POST",
-  };
+//   const otherParams = {
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(data),
+//     method: "POST",
+//   };
 
-  fetch("/send_email", otherParams)
-    .then((data) => {
-      return data.json();
-    })
-    .then((res) => {
-      const statusCode = res.message[0] + res.message[1] + res.message[2];
-      if (statusCode == 20) {
-        form.reset();
-        newPara.innerText = successMessage;
-        newPara.style.fontWeight = 700;
-        form.appendChild(newPara);
-      } else {
-        newPara.innerText = failMessage;
-        newPara.style.fontWeight = 700;
-        form.appendChild(newPara);
-      }
-    });
-});
+//   fetch("/send_email", otherParams)
+//     .then((data) => {
+//       return data.json();
+//     })
+//     .then((res) => {
+//       const statusCode = res.message[0] + res.message[1] + res.message[2];
+//       if (statusCode == 20) {
+//         form.reset();
+//         newPara.innerText = successMessage;
+//         newPara.style.fontWeight = 700;
+//         form.appendChild(newPara);
+//       } else {
+//         newPara.innerText = failMessage;
+//         newPara.style.fontWeight = 700;
+//         form.appendChild(newPara);
+//       }
+//     });
+// });
 
 var slideIndex = 1;
 autoShowSlides(slideIndex);

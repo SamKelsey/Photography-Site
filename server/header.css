@@ -28,9 +28,9 @@ nav {
 }
 
 .logo {
-  border: 2px solid #f05d5e;
-  border-radius: 6px;
+  width: 180px;
   transition: all 0.3s;
+  color: blue;
 }
 
 .logo:hover {
@@ -56,6 +56,9 @@ nav > ul {
   list-style: none;
   padding-left: 0;
   width: 45vw;
+}
+nav > a:hover {
+  cursor: pointer;
 }
 
 .nav-link a {
@@ -85,24 +88,17 @@ nav > ul {
 
   .burger-logo {
     display: inline-block;
-    border: 2px solid #f05d5e;
     border-radius: 6px;
     transition: all 0.3s;
     margin: 3%;
-    transition: 0.3s;
   }
 
   .burger-logo:hover {
     transform: scale(1.05);
   }
 
-  .burger-logo a {
-    font-family: "Montserrat", sans-serif;
-    margin: 0 auto auto auto;
-    font-size: 1.5rem;
-    padding: 3px 3px;
-    text-decoration: none;
-    color: black;
+  .burger-logo a:hover {
+    cursor: pointer;
   }
 
   .menu-button {
