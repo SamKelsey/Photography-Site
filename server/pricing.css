@@ -14,57 +14,75 @@
   margin-top: 20px;
 }
 
-.pricing-section > .prices {
-  display: flex;
-  justify-content: space-between;
+.pricing-section .form-wrapper {
+  padding: 30px;
+  text-align: center;
 }
 
-.pricing-section > .prices h3 {
-  font-size: 1.2rem;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.prices {
-  padding: 20px;
+.pricing-section form {
   margin: auto;
 }
 
-.pricing-section table tr td {
-  min-width: 48px;
+.pricing-section form label {
+  padding: 30px;
+  padding-left: 0;
+  font-size: 1.2rem;
 }
 
-.pricing-section table td:nth-child(2) {
-  font-size: 1.1em;
+.pricing-section select {
+  margin-right: 20px;
+  font-size: 1rem;
+  color: #f05d5e;
+  padding: 2px;
+  border-radius: 5px 0 5px 0;
+}
+
+.pricing-section form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid #f05d5e;
+  border-radius: 8px;
+  padding: 0px 10px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.pricing-section form button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #f05d5e;
+  color: rgba(255, 255, 255, 1);
+}
+
+.pricing-section .price {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.pricing-section p span {
   font-weight: bolder;
-}
-
-.pricing-section span {
-  font-weight: bolder;
-}
-
-.bed {
-  padding-right: 20px;
-}
-
-.flat-prices {
-  padding-left: 20vw;
-}
-
-.house-prices {
-  padding-right: 20vw;
-}
-
-@media (max-width: 1000px) {
-  .flat-prices,
-  .house-prices {
-    padding: 0 10vw;
-  }
 }
 
 @media (max-width: 800px) {
-  .flat-prices,
-  .house-prices {
-    padding: 0 5vw;
+  #price-calculator-form label,
+  #price-calculator-form select {
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+
+  #price-calculator-form select {
+    margin-top: 0;
+  }
+
+  #price-calculator-form label {
+    padding: 0;
+  }
+
+  #price-calc-button {
+    margin-top: 10px;
+  }
+
+  #calculated-price {
+    margin-bottom: 30px;
   }
 }

@@ -1,4 +1,4 @@
 TODO LIST
 
 - Can't press dot button for couple seconds if one has just been pressed.
-- Add in new logos
+- Fix logo becoming blurry when hovered on/scales up in css - may need to convert to an svg.
