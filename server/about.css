@@ -26,6 +26,12 @@
   font-size: 1.2rem;
 }
 
+.para-logo {
+  border: 2px solid #f4f2f3;
+  border-radius: 5px;
+  padding: 0 3px 0 3px;
+}
+
 .about-us-text > p span {
   font-weight: 800;
 }
