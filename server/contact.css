@@ -41,6 +41,7 @@
 
 .form-input input {
   width: 100%;
+  max-width: 350px;
 }
 
 .form-input > label {
