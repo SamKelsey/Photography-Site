@@ -30,6 +30,9 @@ nav {
 .logo {
   width: 180px;
   transition: all 0.3s;
+}
+
+.header-logo {
   opacity: 0.8;
 }
 
