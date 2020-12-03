@@ -30,7 +30,7 @@ nav {
 .logo {
   width: 180px;
   transition: all 0.3s;
-  color: blue;
+  opacity: 0.8;
 }
 
 .logo a {
@@ -38,7 +38,6 @@ nav {
   font-size: 1.5rem;
   padding: 3px 3px;
   text-decoration: none;
-  color: black;
 }
 
 .nav-links {
